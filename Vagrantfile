@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
 
   # Make this VM reachable on the host network as well, so that other
   # VM's running other browsers can access our dev server.
-  config.vm.network :private_network, ip: "192.168.10.200"
+  config.vm.network :private_network, ip: "192.168.0.200"
 
   # Make it so that network access from the vagrant guest is able to
   # use SSH private keys that are present on the host without copying
